@@ -13,7 +13,7 @@ from anthropic import Anthropic
 from .config import settings
 from .db import get_conn, row_to_movie
 
-MODEL = "claude-opus-4-8"  # best mood-matching; switch to claude-sonnet-4-6 to cut cost
+MODEL = "claude-sonnet-4-6"  # great mood-matching at lower cost; use claude-opus-4-8 for max quality
 
 SYSTEM_INTRO = (
     "You are a film concierge with deep knowledge of cinema. You help someone decide "

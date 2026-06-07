@@ -6,7 +6,7 @@
 
 A self-hosted web app that reads your **Plex** movie library and helps you decide what to watch. powered by **Claude** for mood-based picks.
 
-![Reel Pick — Mood tab](docs/mood-landing.png)
+![Reel Pick — decide what to watch](docs/og-image.png)
 
 ![License: MIT](https://img.shields.io/badge/license-MIT-e5a00d)
 ![Backend: FastAPI](https://img.shields.io/badge/backend-FastAPI-009688)
@@ -70,7 +70,7 @@ Fully responsive - run it at home and pull it up on the couch.
 |---|---|
 | Backend | Python · FastAPI · [`python-plexapi`](https://github.com/pkkid/python-plexapi) · SQLite |
 | Frontend | React · Vite |
-| AI | Claude (`claude-opus-4-8`) via the Anthropic API, with prompt caching |
+| AI | Claude (`claude-sonnet-4-6`) via the Anthropic API, with prompt caching |
 
 **How it works:** the backend syncs your Plex library into a local SQLite cache so the app stays fast and keeps working even if Plex hiccups. Poster images are proxied through the backend so your Plex token never reaches the browser. For mood picks, the full catalog is sent to Claude with prompt caching, so repeat queries are cheap.
 
