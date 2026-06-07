@@ -26,7 +26,9 @@ A self-hosted web app that reads your **Plex** movie library and helps you decid
    <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=marsriot/plex-movie-picker&type=date&legend=top-left" />
  </picture>
 </a>
+
 ---
+
 ## Why?
 
 You own hundreds of movies and still spend 25 minutes scrolling instead of watching one. Reel Pick fixes the *decision*, not the discovery - it shrinks your whole library down to one good choice, fast.
