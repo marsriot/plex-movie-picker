@@ -4,7 +4,7 @@
 
 ### Stop scrolling. Start watching.
 
-A self-hosted web app that reads your **Plex** movie library and helps you decide what to watch — powered by **Claude** for mood-based picks.
+A self-hosted web app that reads your **Plex** movie library and helps you decide what to watch. powered by **Claude** for mood-based picks.
 
 ![Reel Pick — Mood tab](docs/mood-landing.png)
 
@@ -17,16 +17,26 @@ A self-hosted web app that reads your **Plex** movie library and helps you decid
 
 ---
 
+## Star History
+
+<a href="https://www.star-history.com/?repos=marsriot%2Fplex-movie-picker&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=marsriot/plex-movie-picker&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=marsriot/plex-movie-picker&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=marsriot/plex-movie-picker&type=date&legend=top-left" />
+ </picture>
+</a>
+---
 ## Why?
 
-You own hundreds of movies and still spend 25 minutes scrolling instead of watching one. Reel Pick fixes the *decision*, not the discovery — it shrinks your whole library down to one good choice, fast.
+You own hundreds of movies and still spend 25 minutes scrolling instead of watching one. Reel Pick fixes the *decision*, not the discovery - it shrinks your whole library down to one good choice, fast.
 
 It syncs your Plex library into a local cache and gives you five ways to land on tonight's movie.
 
 ## ✨ Features
 
-### 🎭 Mood — describe a vibe, get picks
-Type what you're in the mood for in plain English. Claude reads your **entire** library and returns a few films that fit — matching tone and theme, not just genre tags — with a one-line reason for each.
+### 🎭 Mood - describe a vibe, get picks
+Type what you're in the mood for in plain English. Claude reads your **entire** library and returns a few films that fit - matching tone and theme, not just genre tags; with a one-line reason for each.
 
 ![Mood results](docs/mood-results.png)
 
@@ -35,7 +45,7 @@ Can't choose? Go head-to-head. Pick the poster you'd rather watch; the winner ad
 
 ![Bracket](docs/bracket.png)
 
-### 💎 Hidden Gems — the good stuff you forgot you owned
+### 💎 Hidden Gems - the good stuff you forgot you owned
 Highly-rated movies in your library that you've **never watched** and that have been sitting there a while.
 
 ![Hidden Gems](docs/gems.png)
@@ -44,7 +54,7 @@ Highly-rated movies in your library that you've **never watched** and that have 
 One-button random pick (with runtime/unwatched filters), plus a full browse view with search, genre/runtime filters, and sorting.
 
 ### 📱 Works on your phone
-Fully responsive — run it at home and pull it up on the couch.
+Fully responsive - run it at home and pull it up on the couch.
 
 <div align="center">
 <img src="docs/mobile-mood.png" alt="Reel Pick on mobile" width="280">
@@ -87,7 +97,7 @@ npm install
 npm run dev               # http://localhost:5173 (dev, hot-reload)
 ```
 
-For everyday use, run the backend with `--host 0.0.0.0` and open **`http://<this-machine-ip>:8787`** from any device on your network — that single port serves the whole app.
+For everyday use, run the backend with `--host 0.0.0.0` and open **`http://<this-machine-ip>:8787`** from any device on your network - that single port serves the whole app.
 
 Hit **↻ Sync** once to pull your library, then pick a movie.
 
@@ -102,7 +112,7 @@ Hit **↻ Sync** once to pull your library, then pick a movie.
 
 **Finding your Plex token:** in Plex Web, play any movie → ⋮ → **Get Info** → **View XML**, and copy the `X-Plex-Token=…` value from the URL. ([full guide](https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/))
 
-> 🔒 `backend/.env` is gitignored — your tokens and API key never get committed.
+> 🔒 `backend/.env` is gitignored - your tokens and API key never get committed.
 
 ---
 
@@ -114,7 +124,7 @@ Hit **↻ Sync** once to pull your library, then pick a movie.
 
 ## 📄 License
 
-[MIT](LICENSE) — do whatever you like with it.
+[MIT](LICENSE) - do whatever you like with it.
 
 ---
 
