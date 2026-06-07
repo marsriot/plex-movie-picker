@@ -129,7 +129,3 @@ Hit **↻ Sync** once to pull your library, then pick a movie.
 [MIT](LICENSE) - do whatever you like with it.
 
 ---
-
-<div align="center">
-<sub>Built with <a href="https://claude.com/claude-code">Claude Code</a> · 🍿</sub>
-</div>
