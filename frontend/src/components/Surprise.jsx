@@ -1,12 +1,15 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { api } from '../api'
 import MovieCard from './MovieCard'
 
 export default function Surprise() {
-  const [opts, setOpts] = useState({ unwatched: true, max_runtime_min: '' })
+  const [opts, setOpts] = useState({ unwatched: true, max_runtime_min: '', genre: '' })
+  const [genres, setGenres] = useState([])
   const [movie, setMovie] = useState(null)
   const [error, setError] = useState(null)
   const [spinning, setSpinning] = useState(false)
+
+  useEffect(() => { api.genres().then((d) => setGenres(d.genres)).catch(() => {}) }, [])
 
   const roll = () => {
     setSpinning(true)
@@ -28,6 +31,10 @@ export default function Surprise() {
         Can’t decide? Let the projector pick. One movie, no scrolling.
       </p>
       <div className="filters" style={{ justifyContent: 'center' }}>
+        <select value={opts.genre} onChange={set('genre')}>
+          <option value="">Any genre</option>
+          {genres.map((g) => <option key={g} value={g}>{g}</option>)}
+        </select>
         <label className="checkbox">
           <input type="checkbox" checked={opts.unwatched} onChange={set('unwatched')} />
           Unwatched only
